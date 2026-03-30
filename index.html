@@ -1,15 +1,22 @@
 <!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Experience Livable Luxury at Villa Thalassa, Paralimni. A sun-drenched sanctuary perfect for long-term winter stays in Cyprus with high-speed fiber WiFi and coastal views."/>
+    <title>Villa Thalassa Paralimni | Livable Luxury in Cyprus</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta name="description" content="Experience Livable Luxury at Villa Thalassa, Paralimni. A sun-drenched sanctuary perfect for long-term winter stays in Cyprus with high-speed fiber WiFi and coastal views."/>
-<title>Villa Thalassa Paralimni | Livable Luxury in Cyprus</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tahiti18.github.io/villa-thalassa/">
+    <meta property="og:title" content="Villa Thalassa Paralimni | Livable Luxury">
+    <meta property="og:description" content="A sun-drenched winter sanctuary in Cyprus. 200Mbps Fiber, 350m to the shore, and total tranquility.">
+    <meta property="og:image" content="https://tahiti18.github.io/villa-thalassa/villaphotos/final/beach_hero_highres.png">
 
-<script id="tailwind-config">
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -74,393 +81,391 @@
             },
         }
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .bg-glass {
-            background: rgba(251, 249, 244, 0.7);
-            backdrop-filter: blur(12px);
-        }
-        .ambient-shadow {
-            box-shadow: 0px 20px 40px rgba(27, 28, 25, 0.06);
-        }
-        .ghost-border {
-            border: 1px solid rgba(207, 197, 185, 0.15);
-        }
-        .primary-gradient {
-            background: linear-gradient(45deg, #695d46 0%, #d7c7ab 100%);
-        }
-        .scrapbook-rotate-left { transform: rotate(-2deg); }
-        .scrapbook-rotate-right { transform: rotate(1.5deg); }
-        .luxury-pop {
-            box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.45);
-        }
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .bg-glass { background: rgba(251, 249, 244, 0.7); backdrop-filter: blur(12px); }
+        .ambient-shadow { box-shadow: 0px 20px 40px rgba(27, 28, 25, 0.06); }
+        .ghost-border { border: 1px solid rgba(207, 197, 185, 0.15); }
+        .luxury-pop { box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.45); }
+        .primary-gradient { background: linear-gradient(135deg, #7a6b52 0%, #504530 100%); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        @keyframes slow-zoom { from { transform: scale(1); } to { transform: scale(1.1); } }
+        .hero-animation { animation: slow-zoom 20s infinite alternate ease-in-out; }
     </style>
 </head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
-<nav id="main-nav" class="fixed top-0 w-full z-50 bg-transparent transition-all duration-500 border-b border-white/0">
-<div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
-<div class="text-xl font-bold tracking-tighter text-white font-headline">Villa Thalassa Paralimni</div>
-<div class="hidden md:flex items-center gap-8 font-epilogue font-semibold tracking-tight text-sm">
-<a class="text-white border-b-2 border-primary-container pb-1" href="#villa">The Villa</a>
-<a class="text-white/70 hover:text-white transition-colors" href="#lifestyle">Lifestyle</a>
-<a class="text-white/70 hover:text-white transition-colors" href="#remote-work">Remote Work</a>
-<a class="text-white/70 hover:text-white transition-colors" href="#pricing">Pricing</a>
-<a class="text-white/70 hover:text-white transition-colors" href="#contact">Contact</a>
-</div>
-<button class="bg-primary-fixed text-on-primary-fixed px-5 py-2 rounded-none font-bold text-sm hover:bg-primary-container transition-colors shadow-sm">Book Your Stay</button>
-</div>
-</nav>
-<main class="">
-<!-- Hero Section -->
-<section class="relative h-screen flex items-center overflow-hidden w-full">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover" data-alt="Beautiful Cyprus beach with crystal clear waters and palm trees" src="villaphotos/final/beach_hero_highres.png"/>
-<div class="absolute inset-0 bg-gradient-to-r from-on-surface/60 via-on-surface/20 to-transparent"></div>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
-<div class="max-w-2xl text-white">
-<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-6">
-                        Live in Cyprus This Winter — <span class="text-primary-container italic">Not Just Visit</span>
-</h1>
-<p class="font-body text-xl mb-10 opacity-90 leading-relaxed max-w-xl">
-                        A sun-drenched sanctuary in Paralimni. Steps from the sea, equipped with high-speed fiber WiFi, and designed for long-term comfort.
-                    </p>
-<div class="flex flex-wrap gap-4">
-<a class="primary-gradient text-on-primary px-8 py-4 rounded-md font-bold text-lg ambient-shadow hover:scale-105 transition-transform" href="#lifestyle">Experience the Lifestyle</a>
-<a class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-white/20 transition-all" href="#villa">View the Villa</a>
-</div>
-</div>
-</div>
-</section>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container">
 
-<!-- What's Included Strip -->
-<section class="bg-inverse-surface py-5 overflow-x-auto">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="flex items-center gap-0 min-w-max lg:min-w-0 lg:justify-between w-full">
-            <div class="flex items-center gap-3 px-5 border-r border-white/10">
-                <span class="material-symbols-outlined text-primary-fixed-dim">wifi</span>
-                <span class="text-inverse-on-surface font-body text-sm font-semibold whitespace-nowrap">200 Mbps Fiber</span>
+<nav id="main-nav" class="fixed top-0 w-full z-50 bg-transparent transition-all duration-500 border-b border-white/0">
+    <div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
+        <a href="index.html" class="font-headline text-2xl font-bold tracking-tighter text-white">Villa Thalassa</a>
+        <div class="hidden md:flex gap-8">
+            <a href="#lifestyle" class="text-white/80 hover:text-white font-medium text-sm transition-colors">Neighborhood</a>
+            <a href="#villa" class="text-white/80 hover:text-white font-medium text-sm transition-colors">The Villa</a>
+            <a href="#pricing" class="text-white/80 hover:text-white font-medium text-sm transition-colors">Pricing</a>
+            <a href="#contact" class="bg-white/10 backdrop-blur-md px-5 py-2 text-white font-bold text-xs uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20">Book Now</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <!-- Full-Bleed Hero Section -->
+    <section class="h-screen relative flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <img src="villaphotos/final/beach_hero_highres.png" class="w-full h-full object-cover hero-animation" alt="Villa Thalassa View">
+        </div>
+        
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <span class="inline-block font-label uppercase tracking-[0.4em] text-white/90 text-sm mb-6">Experience Livable Luxury</span>
+            <h1 class="font-headline text-6xl md:text-8xl font-extrabold text-white tracking-tighter mb-8 leading-[0.9]">
+                Your Winter Sanctuary in Cyprus.
+            </h1>
+            <p class="font-body text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed italic">
+                A sun-drenched coastal retreat designed for slow living, deep work, and Mediterranean tranquility.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="#lifestyle" class="px-10 py-5 bg-white text-on-surface font-bold text-sm uppercase tracking-widest transition-all hover:scale-105 shadow-xl">Explore Local Rhythm</a>
+                <a href="#villa" class="px-10 py-5 bg-transparent border-2 border-white text-white font-bold text-sm uppercase tracking-widest transition-all hover:bg-white/10">View The Villa</a>
             </div>
-            <div class="flex items-center gap-3 px-5 border-r border-white/10">
+        </div>
+
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 animate-bounce cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-white text-4xl">expand_more</span>
+        </div>
+    </section>
+
+    <!-- Amenities Highlight: Floating Bar -->
+    <section class="relative z-30 -mt-16 max-w-7xl mx-auto px-4">
+        <div class="bg-nav-bg border border-white/10 shadow-2xl overflow-x-auto flex items-center divide-x divide-white/10 group no-scrollbar">
+            <div class="flex items-center gap-3 px-5 py-6">
                 <span class="material-symbols-outlined text-primary-fixed-dim">ac_unit</span>
                 <span class="text-inverse-on-surface font-body text-sm font-semibold whitespace-nowrap">AC All Rooms</span>
             </div>
-            <div class="flex items-center gap-3 px-5 border-r border-white/10">
+            <div class="flex items-center gap-3 px-5 py-6">
                 <span class="material-symbols-outlined text-primary-fixed-dim">local_parking</span>
                 <span class="text-inverse-on-surface font-body text-sm font-semibold whitespace-nowrap">Private Parking</span>
             </div>
-            <div class="flex items-center gap-3 px-5 border-r border-white/10">
+            <div class="flex items-center gap-3 px-5 py-6">
                 <span class="material-symbols-outlined text-primary-fixed-dim">outdoor_grill</span>
                 <span class="text-inverse-on-surface font-body text-sm font-semibold whitespace-nowrap">Stone BBQ</span>
             </div>
-            <div class="flex items-center gap-3 px-5 border-r border-white/10">
+            <div class="flex items-center gap-3 px-5 py-6">
                 <span class="material-symbols-outlined text-primary-fixed-dim">wb_sunny</span>
                 <span class="text-inverse-on-surface font-body text-sm font-semibold whitespace-nowrap">Garden Terrace</span>
             </div>
-            <div class="flex items-center gap-3 px-5 border-r border-white/10">
+            <div class="flex items-center gap-3 px-5 py-6">
                 <span class="material-symbols-outlined text-primary-fixed-dim">cleaning_services</span>
                 <span class="text-inverse-on-surface font-body text-sm font-semibold whitespace-nowrap">Cleaning Included</span>
             </div>
-            <div class="flex items-center gap-3 px-5 border-r border-white/10">
+            <div class="flex items-center gap-3 px-5 py-6">
                 <span class="material-symbols-outlined text-primary-fixed-dim">king_bed</span>
                 <span class="text-inverse-on-surface font-body text-sm font-semibold whitespace-nowrap">4 Bedrooms</span>
             </div>
-            <div class="flex items-center gap-3 px-5">
+            <div class="flex items-center gap-3 px-5 py-6">
                 <span class="material-symbols-outlined text-primary-fixed-dim">electric_bolt</span>
                 <span class="text-inverse-on-surface font-body text-sm font-semibold whitespace-nowrap">All Bills Included</span>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Stay Duration Selection -->
-<section class="bg-surface-container-low border-b border-outline-variant/30 py-10 relative z-20">
-<div class="max-w-7xl mx-auto px-8">
-<div class="flex flex-col md:flex-row items-center justify-between gap-8">
-<div class="text-left">
-<span class="font-label uppercase tracking-widest text-xs text-primary mb-1 block">Tailor Your Experience</span>
-<h2 class="font-headline text-3xl font-bold text-on-surface">How long are you staying?</h2>
-</div>
-<div class="flex flex-row gap-4 w-full md:w-auto">
-<a class="flex-1 md:flex-none flex items-center gap-4 py-4 px-6 rounded-none bg-surface-container-lowest ghost-border ambient-shadow group hover:border-primary transition-all" href="#lifestyle">
-<span class="material-symbols-outlined text-3xl text-secondary">calendar_today</span>
-<div>
-<span class="block text-lg font-headline font-bold">Short Stay</span>
-<span class="text-xs text-on-surface-variant italic">The Getaway Experience</span>
-</div>
-</a>
-<a class="flex-1 md:flex-none flex items-center gap-4 py-4 px-6 rounded-none primary-gradient text-on-primary ambient-shadow group hover:scale-[1.02] transition-all" href="#remote-work">
-<span class="material-symbols-outlined text-3xl">home_work</span>
-<div>
-<span class="block text-lg font-headline font-bold">Long Stay</span>
-<span class="text-xs opacity-90 italic">The Local Lifestyle</span>
-</div>
-</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Lifestyle Section: Refined Scrapbook Layout -->
-<section class="max-w-7xl mx-auto px-8 mb-48 scroll-mt-32" id="lifestyle">
-<div class="grid lg:grid-cols-2 gap-20 items-center">
-<!-- Scrapbook Gallery -->
-<!-- Clean Bento Grid Gallery -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-auto md:h-[600px] w-full">
-<!-- Tall Image: Cove -->
-<div onclick="openNeighborhoodModal('shores')" class="md:col-span-1 md:row-span-2 overflow-hidden rounded-none border-[3px] border-primary-fixed-dim luxury-pop group relative h-[300px] md:h-full cursor-pointer">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Crystal clear turquoise cove with white limestone cliffs and no crowds" src="villaphotos/final/malama_cove_highres.png"/>
-<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-<p class="font-label text-xs uppercase tracking-wider text-white font-bold">Hidden Cove, 350m Walk</p>
-</div>
-</div>
-<!-- Square Image: Taverna -->
-<div onclick="openNeighborhoodModal('soul')" class="md:col-span-1 md:row-span-1 overflow-hidden rounded-none border-[3px] border-primary-fixed-dim luxury-pop group relative h-[250px] md:h-full cursor-pointer">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Traditional Cypriot taverna with blue wooden chairs and overflowing pink bougainvillea" src="villaphotos/final/ttappis_tavern_highres.png"/>
-<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-<p class="font-label text-xs uppercase tracking-wider text-white font-bold">Afternoon Meze</p>
-</div>
-</div>
-<!-- 2 Small Images: Street & Bakery -->
-<div class="md:col-span-1 md:row-span-1 grid grid-cols-2 gap-4 h-[200px] md:h-full">
-<div onclick="openNeighborhoodModal('sun')" class="overflow-hidden rounded-none border-[3px] border-primary-fixed-dim luxury-pop group relative h-full cursor-pointer">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Sun-drenched quiet street in Paralimni with stone walls and lemon trees" src="villaphotos/final/coastal_path_highres.png"/>
-<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3">
-<p class="font-label text-[10px] uppercase tracking-wider text-white font-bold">The Quiet Season</p>
-</div>
-</div>
-<div onclick="openNeighborhoodModal('local')" class="overflow-hidden rounded-none border-[3px] border-primary-fixed-dim luxury-pop group relative h-full cursor-pointer">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Rustic local bakery counter with fresh halloumi bread and olives" src="villaphotos/final/local_street_highres.png"/>
-<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3">
-<p class="font-label text-[10px] uppercase tracking-wider text-white font-bold">Village Enclave</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Copy Section -->
-<div class="lg:pl-10">
-<span class="font-label uppercase tracking-widest text-xs text-primary mb-2 block tracking-widest">Neighborhood Guide</span>
-<span class="font-label uppercase tracking-widest text-xs text-secondary mb-4 block">Slow Living</span>
-<h2 class="font-headline text-4xl md:text-5xl font-bold mb-8 text-on-surface leading-tight">The Mediterranean Rhythm</h2>
-<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
-<p>
-                            Winter in Paralimni isn't about the tourist rush; it's about reclaiming the authentic Cypriot "Siga Siga" (slowly, slowly) pace. While the rest of Europe turns grey, our coast remains drenched in soft amber light, with 300+ days of sunshine a year.
-                        </p>
-<p>
-                            Imagine a Tuesday morning: a short stroll to the bakery for warm halloumi bread, a quiet swim in a crystal-clear cove that you have entirely to yourself, and an afternoon spent working from the garden under the warmth of the winter sun. No crowds, no noise—just the rustle of olive trees and the genuine hospitality of the local tavernas.
-                        </p>
-</div>
-</div>
-</div>
-</div>
-<!-- Full Width Features -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-16 mt-16 border-t border-outline/20">
-<div onclick="openNeighborhoodModal('shores')" class="flex flex-col items-center text-center gap-3 bg-surface-container-lowest p-8 rounded-none border-2 border-transparent hover:border-primary-fixed-dim shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group">
-<span class="material-symbols-outlined text-secondary text-4xl mb-2 group-hover:scale-110 transition-transform">waves</span>
-<span class="font-bold text-lg font-headline">Empty Shores</span>
-<span class="text-sm opacity-80">Crystalline coves just 350m away, serene and private in winter.</span>
-<span class="text-xs text-primary font-bold mt-2 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Explore Nearby</span>
-</div>
-<div onclick="openNeighborhoodModal('soul')" class="flex flex-col items-center text-center gap-3 bg-surface-container-lowest p-8 rounded-none border-2 border-transparent hover:border-primary-fixed-dim shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group">
-<span class="material-symbols-outlined text-secondary text-4xl mb-2 group-hover:scale-110 transition-transform">bakery_dining</span>
-<span class="font-bold text-lg font-headline">Village Soul</span>
-<span class="text-sm opacity-80">Authentic bakeries and family tavernas within walking distance.</span>
-<span class="text-xs text-primary font-bold mt-2 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Local Guide</span>
-</div>
-<div onclick="openNeighborhoodModal('sun')" class="flex flex-col items-center text-center gap-3 bg-surface-container-lowest p-8 rounded-none border-2 border-transparent hover:border-primary-fixed-dim shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group">
-<span class="material-symbols-outlined text-secondary text-4xl mb-2 group-hover:scale-110 transition-transform">wb_sunny</span>
-<span class="font-bold text-lg font-headline">Vitamin D</span>
-<span class="text-sm opacity-80">Mild winters with constant sunshine for year-round energy.</span>
-<span class="text-xs text-primary font-bold mt-2 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">See Weather</span>
-</div>
-<div onclick="openNeighborhoodModal('local')" class="flex flex-col items-center text-center gap-3 bg-surface-container-lowest p-8 rounded-none border-2 border-transparent hover:border-primary-fixed-dim shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group">
-<span class="material-symbols-outlined text-secondary text-4xl mb-2 group-hover:scale-110 transition-transform">cottage</span>
-<span class="font-bold text-lg font-headline">Local Identity</span>
-<span class="text-sm opacity-80">A residential enclave far removed from the busy hotel strips.</span>
-<span class="text-xs text-primary font-bold mt-2 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Get Directions</span>
-</div>
-</div>
-</section>
-<!-- Room by Room - Bento Grid Style -->
-<section class="py-24 bg-surface-container-low scroll-mt-32" id="villa">
-<div class="max-w-7xl mx-auto px-8">
-<h2 class="font-headline text-3xl font-bold mb-16 text-center">Your Private Sanctuary</h2>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-<!-- Remote Work -->
-<div class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block scroll-mt-32 border-[3px] border-primary-fixed-dim luxury-pop" id="remote-work">
-  <img src="villaphotos/final/remote_work_desk.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Remote Work Desk">
-  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-    <h3 class="font-headline text-2xl font-bold">Remote Work Ready</h3>
-    <p class="opacity-80">200 Mbps Fiber WiFi</p>
-  </div>
-</div>
-
-<a href="exterior.html" class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
-  <img src="villaphotos/final/exterior_house_1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-    <h3 class="font-headline text-2xl font-bold">The Villa Exterior</h3>
-    <p class="opacity-80">4 Photos &amp; Amenities</p>
-  </div>
-</a>
-
-<a href="living-room.html" class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
-  <img src="villaphotos/final/living_room_1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-    <h3 class="font-headline text-2xl font-bold">Living Room</h3>
-    <p class="opacity-80">2 Photos &amp; Amenities</p>
-  </div>
-</a>
-
-<a href="kitchen.html" class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
-  <img src="villaphotos/final/kitchen_1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-    <h3 class="font-headline text-2xl font-bold">Kitchen & Dining</h3>
-    <p class="opacity-80">6 Photos &amp; Amenities</p>
-  </div>
-</a>
-
-<a href="bedrooms.html" class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
-  <img src="villaphotos/final/bedroom_1_2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-    <h3 class="font-headline text-2xl font-bold">The Bedrooms</h3>
-    <p class="opacity-80">7 Photos &amp; Amenities</p>
-  </div>
-</a>
-
-<a href="bathrooms.html" class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
-  <img src="villaphotos/final/bathroom_1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-    <h3 class="font-headline text-2xl font-bold">Bathrooms</h3>
-    <p class="opacity-80">2 Photos &amp; Amenities</p>
-  </div>
-</a>
-
-<a href="driveway.html" class="md:col-span-6 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
-  <img src="villaphotos/final/patio_driveway.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-    <h3 class="font-headline text-2xl font-bold">Private Driveway</h3>
-    <p class="opacity-80">1 Photo &amp; Amenities</p>
-  </div>
-</a>
-
-<a href="patio.html" class="md:col-span-6 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
-  <img src="villaphotos/final/patio_bar_1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
-    <h3 class="font-headline text-2xl font-bold">Patio &amp; Outdoors</h3>
-    <p class="opacity-80">6 Photos &amp; Amenities</p>
-  </div>
-</a>
-</div>
-</div>
-</section>
-<!-- Detailed Inventory Removed -> Replaced by the Sub Pages and Amenities -->
-<!-- Pricing Section -->
-<section class="py-24 bg-surface-container scroll-mt-32" id="pricing">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-16">
-<span class="font-label uppercase tracking-widest text-xs text-primary mb-2 block">Your Stay, Refined</span>
-<h2 class="font-headline text-3xl font-bold mb-4">Pricing Plans</h2>
-<p class="text-on-surface-variant max-w-xl mx-auto">Having explored the villa and the local rhythm, select the seasonal rate that best fits your winter sanctuary plans.</p>
-</div>
-<div class="grid md:grid-cols-3 gap-8 items-stretch">
-<!-- 1 Month -->
-<div class="bg-surface p-8 rounded-none ghost-border flex flex-col items-center">
-<span class="text-sm font-label uppercase tracking-widest mb-4">1 Month</span>
-<div class="text-4xl font-headline font-extrabold mb-2">€1,300</div>
-<span class="text-on-surface-variant mb-8 text-sm">Total per month</span>
-<ul class="w-full space-y-3 mb-8 text-sm opacity-80 flex-grow">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> All utilities included</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> Fiber WiFi</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> Weekly basic cleaning</li>
-</ul>
-<button class="w-full py-3 border border-outline text-on-surface rounded-none font-bold hover:bg-on-surface hover:text-white transition-all mt-auto">Select</button>
-</div>
-<!-- 3 Months - Featured -->
-<div class="bg-white p-8 rounded-none ambient-shadow border-2 border-primary-container flex flex-col items-center relative scale-105 z-10">
-<div class="absolute -top-4 bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Most Popular</div>
-<span class="text-sm font-label uppercase tracking-widest mb-4">3 Months</span>
-<div class="text-5xl font-headline font-extrabold mb-2 text-primary">€1,100</div>
-<span class="text-on-surface-variant mb-8 text-sm">Total per month</span>
-<ul class="w-full space-y-3 mb-8 text-sm flex-grow">
-<li class="flex items-center gap-2 font-bold"><span class="material-symbols-outlined text-secondary">check_circle</span> All utilities included</li>
-<li class="flex items-center gap-2 font-bold"><span class="material-symbols-outlined text-secondary">check_circle</span> Fiber WiFi</li>
-<li class="flex items-center gap-2 font-bold"><span class="material-symbols-outlined text-secondary">check_circle</span> Bi-weekly deep cleaning</li>
-</ul>
-<button class="w-full py-4 primary-gradient text-on-primary rounded-none font-bold ambient-shadow mt-auto">Book 3 Months</button>
-</div>
-<!-- 6 Months -->
-<div class="bg-surface p-8 rounded-none ghost-border flex flex-col items-center">
-<span class="text-sm font-label uppercase tracking-widest mb-4">6 Months</span>
-<div class="text-4xl font-headline font-extrabold mb-2">€950</div>
-<span class="text-on-surface-variant mb-8 text-sm">Total per month</span>
-<ul class="w-full space-y-3 mb-8 text-sm opacity-80 flex-grow">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> Lowest seasonal rate</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> Full winter residency</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> Local gym membership</li>
-</ul>
-<button class="w-full py-3 border border-outline text-on-surface rounded-none font-bold hover:bg-on-surface hover:text-white transition-all mt-auto">Select</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Final CTA Section -->
-<section class="max-w-5xl mx-auto px-8 py-32 text-center" id="contact">
-<h2 class="font-headline text-4xl md:text-6xl font-extrabold mb-8 tracking-tighter">Ready to swap the grey for blue?</h2>
-<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto">Contact us directly for personalized long-stay quotes or any specific requirements for your stay.</p>
-<div class="flex flex-wrap justify-center gap-6">
-<a class="flex items-center gap-3 bg-secondary text-on-secondary px-8 py-4 rounded-none hover:translate-y-[-2px] transition-transform" href="#">
-<span class="material-symbols-outlined">chat</span>
-<span class="font-bold">WhatsApp Us</span>
-</a>
-<a class="flex items-center gap-3 bg-surface-container-highest text-on-surface px-8 py-4 rounded-none hover:translate-y-[-2px] transition-transform ghost-border" href="#">
-<span class="material-symbols-outlined">mail</span>
-<span class="font-bold">Email Inquiry</span>
-</a>
-<a class="flex items-center gap-3 border border-secondary text-secondary px-8 py-4 rounded-none hover:translate-y-[-2px] transition-transform" href="#">
-<span class="material-symbols-outlined">star</span>
-<span class="font-bold">View on Airbnb</span>
-</a>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-slate-950 w-full py-12 px-8">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
-<div>
-<div class="text-lg font-epilogue font-bold text-on-surface dark:text-white mb-4">Villa Thalassa Paralimni</div>
-<p class="text-on-surface-variant opacity-80 font-manrope text-base leading-relaxed">
-                    A boutique residential retreat designed for those who appreciate the finer details of coastal living.
-                </p>
-</div>
-<div class="flex flex-col gap-4 font-manrope text-base leading-relaxed">
-<h5 class="font-bold text-primary">Quick Links</h5>
-<a class="text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary transition-opacity" href="#">Email</a>
-<a class="text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary transition-opacity" href="#">WhatsApp</a>
-<a class="text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary transition-opacity" href="#">Airbnb</a>
-<a class="text-on-surface-variant opacity-80 hover:opacity-100 hover:text-secondary transition-opacity" href="#">Instagram</a>
-</div>
-<div class="flex flex-col items-start md:items-end justify-between">
-<button class="bg-primary text-on-primary px-6 py-3 rounded-none font-bold hover:translate-y-[-2px] transition-transform duration-200">Book Now</button>
-<div class="mt-8 md:mt-0 text-sm text-on-surface-variant opacity-60">
-                    © 2024 Villa Thalassa Paralimni. Livable Luxury in Cyprus.
+    <!-- Stay Duration Selection -->
+    <section class="bg-surface-container-low border-b border-outline-variant/30 py-24 relative z-20">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="text-left">
+                    <span class="font-label uppercase tracking-widest text-xs text-primary mb-1 block">Tailor Your Experience</span>
+                    <h2 class="font-headline text-4xl font-bold text-on-surface">How long are you staying?</h2>
                 </div>
-</div>
-</div>
+                <div class="flex flex-col sm:flex-row gap-6 w-full md:w-auto">
+                    <a class="flex items-center gap-4 py-6 px-8 rounded-none bg-surface-container-lowest ghost-border ambient-shadow group hover:border-primary transition-all" href="#lifestyle">
+                        <span class="material-symbols-outlined text-3xl text-secondary">calendar_today</span>
+                        <div>
+                            <span class="block text-xl font-headline font-bold">Short Stay</span>
+                            <span class="text-xs text-on-surface-variant italic font-medium">The Getaway Experience</span>
+                        </div>
+                    </a>
+                    <a class="flex items-center gap-4 py-6 px-8 rounded-none primary-gradient text-on-primary ambient-shadow group hover:scale-[1.02] transition-all" href="#remote-work">
+                        <span class="material-symbols-outlined text-3xl">home_work</span>
+                        <div>
+                            <span class="block text-xl font-headline font-bold">Long Stay</span>
+                            <span class="text-xs opacity-90 italic font-medium">The Local Lifestyle</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neighborhood Guide -->
+    <section class="max-w-7xl mx-auto px-8 py-32 scroll-mt-32" id="lifestyle">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-auto md:h-[600px] w-full">
+                <div onclick="openNeighborhoodModal('shores')" class="md:col-span-1 md:row-span-2 overflow-hidden rounded-none border-[3px] border-primary-fixed-dim luxury-pop group relative h-[300px] md:h-full cursor-pointer">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="villaphotos/final/malama_cove_highres.png"/>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                        <p class="font-label text-xs uppercase tracking-wider text-white font-bold">Hidden Cove, 350m Walk</p>
+                    </div>
+                </div>
+                <div onclick="openNeighborhoodModal('soul')" class="md:col-span-1 md:row-span-1 overflow-hidden rounded-none border-[3px] border-primary-fixed-dim luxury-pop group relative h-[250px] md:h-full cursor-pointer">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="villaphotos/final/ttappis_tavern_highres.png"/>
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                        <p class="font-label text-xs uppercase tracking-wider text-white font-bold">Afternoon Meze</p>
+                    </div>
+                </div>
+                <div class="md:col-span-1 md:row-span-1 grid grid-cols-2 gap-4 h-[200px] md:h-full">
+                    <div onclick="openNeighborhoodModal('sun')" class="overflow-hidden rounded-none border-[3px] border-primary-fixed-dim luxury-pop group relative h-full cursor-pointer">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="villaphotos/final/coastal_path_highres.png"/>
+                    </div>
+                    <div onclick="openNeighborhoodModal('local')" class="overflow-hidden rounded-none border-[3px] border-primary-fixed-dim luxury-pop group relative h-full cursor-pointer">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="villaphotos/final/local_street_highres.png"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:pl-10">
+                <span class="font-label uppercase tracking-widest text-xs text-primary mb-2 block">Neighborhood Guide</span>
+                <span class="font-label uppercase tracking-widest text-xs text-secondary mb-4 block">Slow Living</span>
+                <h2 class="font-headline text-4xl md:text-5xl font-bold mb-8 text-on-surface leading-tight">The Mediterranean Rhythm</h2>
+                <div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+                    <p>Winter in Paralimni isn't about the tourist rush; it's about reclaiming the authentic Cypriot "Siga Siga" (slowly, slowly) pace. While the rest of Europe turns grey, our coast remains drenched in soft amber light, with 300+ days of sunshine a year.</p>
+                    <p>Imagine a Tuesday morning: a short stroll to the bakery for warm halloumi bread, a quiet swim in a crystal-clear cove that you have entirely to yourself, and an afternoon spent working from the garden under the warmth of the winter sun.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Connectivity Proof Section -->
+    <section class="py-24 bg-surface scroll-mt-32 border-y border-outline-variant/20" id="connectivity">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <span class="font-label uppercase tracking-widest text-xs text-secondary mb-2 block">Verified Connectivity</span>
+                    <h2 class="font-headline text-4xl md:text-5xl font-bold mb-8 text-on-surface tracking-tight">Blazing Fast. Rock Solid.</h2>
+                    <div class="space-y-8">
+                        <p class="text-xl text-on-surface-variant leading-relaxed italic border-l-4 border-primary-fixed-dim pl-6">
+                            "Because slow WiFi is the enemy of slow living. Whether you're taking a high-stakes call from the terrace or streaming in 4K from the master suite, our connection is built for the demands of the modern professional."
+                        </p>
+                        <div class="grid grid-cols-2 gap-8">
+                            <div class="flex flex-col">
+                                <span class="text-3xl font-headline font-bold text-primary">212 Mbps</span>
+                                <span class="text-xs font-label uppercase tracking-widest opacity-60">Verified Download</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-3xl font-headline font-bold text-primary">55 Mbps</span>
+                                <span class="text-xs font-label uppercase tracking-widest opacity-60">Verified Upload</span>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 text-sm font-bold">
+                                <span class="material-symbols-outlined text-secondary">wifi_tethering</span>
+                                Dedicated Outdoor Access Points
+                            </div>
+                            <div class="flex items-center gap-4 text-sm font-bold">
+                                <span class="material-symbols-outlined text-secondary">verified_user</span>
+                                Tested & Verified Daily
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-tertiary-fixed-dim/20 blur-2xl group-hover:bg-tertiary-fixed-dim/30 transition-all"></div>
+                    <div class="relative bg-white border-[3px] border-primary-fixed-dim luxury-pop p-4 md:p-8">
+                        <img src="villaphotos/final/wifi_speedtest_verified.png" class="w-full h-auto" alt="Verified Speedtest Result">
+                        <div class="mt-6 pt-6 border-t border-outline-variant/30 flex justify-between items-center">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-secondary">check_circle</span>
+                                <span class="font-label text-xs uppercase tracking-widest font-bold">Authenticated Result</span>
+                            </div>
+                            <span class="text-[10px] text-on-surface-variant/60 font-mono">ID: VT-PAR-PRO-99317</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Selection -->
+    <section class="py-32 bg-surface-container-low scroll-mt-32" id="villa">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="font-headline text-4xl font-bold mb-16 text-center">Your Private Sanctuary</h2>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <!-- Remote Work -->
+                <div class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block scroll-mt-32 border-[3px] border-primary-fixed-dim luxury-pop" id="remote-work">
+                    <img src="villaphotos/final/remote_work_desk.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Remote Work Desk">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
+                        <h3 class="font-headline text-2xl font-bold">Remote Work Ready</h3>
+                        <p class="opacity-80">212/55 Mbps Fiber WiFi</p>
+                    </div>
+                </div>
+
+                <a href="exterior.html" class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
+                    <img src="villaphotos/final/exterior_house_1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
+                        <h3 class="font-headline text-2xl font-bold">The Villa Exterior</h3>
+                        <p class="opacity-80">4 Photos & Amenities</p>
+                    </div>
+                </a>
+
+                <a href="living-room.html" class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
+                    <img src="villaphotos/final/living_room_1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
+                        <h3 class="font-headline text-2xl font-bold">Living Room</h3>
+                        <p class="opacity-80">2 Photos & Amenities</p>
+                    </div>
+                </a>
+
+                <a href="kitchen.html" class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
+                    <img src="villaphotos/final/kitchen_1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
+                        <h3 class="font-headline text-2xl font-bold">Kitchen & Dining</h3>
+                        <p class="opacity-80">6 Photos & Amenities</p>
+                    </div>
+                </a>
+
+                <a href="bedrooms.html" class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
+                    <img src="villaphotos/final/bedroom_1_2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
+                        <h3 class="font-headline text-2xl font-bold">The Bedrooms</h3>
+                        <p class="opacity-80">7 Photos & Amenities</p>
+                    </div>
+                </a>
+
+                <a href="bathrooms.html" class="md:col-span-4 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
+                    <img src="villaphotos/final/bathroom_1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
+                        <h3 class="font-headline text-2xl font-bold">Bathrooms</h3>
+                        <p class="opacity-80">2 Photos & Amenities</p>
+                    </div>
+                </a>
+
+                <a href="driveway.html" class="md:col-span-6 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
+                    <img src="villaphotos/final/patio_driveway.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
+                        <h3 class="font-headline text-2xl font-bold">Private Driveway</h3>
+                        <p class="opacity-80">1 Photo & Amenities</p>
+                    </div>
+                </a>
+
+                <a href="patio.html" class="md:col-span-6 group relative overflow-hidden rounded-none h-[400px] block border-[3px] border-primary-fixed-dim luxury-pop">
+                    <img src="villaphotos/final/patio_bar_1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8 text-white">
+                        <h3 class="font-headline text-2xl font-bold">Patio & Outdoors</h3>
+                        <p class="opacity-80">6 Photos & Amenities</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-32 bg-surface-container scroll-mt-32" id="pricing">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-16">
+                <span class="font-label uppercase tracking-widest text-xs text-primary mb-2 block">Your Stay, Refined</span>
+                <h2 class="font-headline text-4xl font-bold mb-4">Pricing Plans</h2>
+                <p class="text-on-surface-variant max-w-xl mx-auto italic">Seasonal rates for your sun-drenched sanctuary.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 items-stretch">
+                <div class="bg-surface p-8 rounded-none ghost-border flex flex-col items-center">
+                    <span class="text-sm font-label uppercase tracking-widest mb-4">1 Month</span>
+                    <div class="text-4xl font-headline font-extrabold mb-2">€1,300</div>
+                    <span class="text-on-surface-variant mb-8 text-sm">Total per month</span>
+                    <ul class="w-full space-y-3 mb-8 text-sm opacity-80 flex-grow">
+                        <li class="flex items-center gap-2 font-bold"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> All utilities included</li>
+                        <li class="flex items-center gap-2 font-bold"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> Fiber WiFi</li>
+                        <li class="flex items-center gap-2 font-bold"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> Weekly cleaning</li>
+                    </ul>
+                    <button class="w-full py-3 border border-outline text-on-surface rounded-none font-bold hover:bg-on-surface hover:text-white transition-all mt-auto">Select</button>
+                </div>
+                <!-- 3 Months - Featured -->
+                <div class="bg-white p-8 rounded-none shadow-2xl border-2 border-primary-container flex flex-col items-center relative scale-105 z-10">
+                    <div class="absolute -top-4 bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Most Popular</div>
+                    <span class="text-sm font-label uppercase tracking-widest mb-4">3 Months</span>
+                    <div class="text-5xl font-headline font-extrabold mb-2 text-primary">€1,100</div>
+                    <span class="text-on-surface-variant mb-8 text-sm">Total per month</span>
+                    <ul class="w-full space-y-3 mb-8 text-sm flex-grow">
+                        <li class="flex items-center gap-2 font-bold text-lg"><span class="material-symbols-outlined text-secondary">check_circle</span> All utilities included</li>
+                        <li class="flex items-center gap-2 font-bold text-lg"><span class="material-symbols-outlined text-secondary">check_circle</span> Fiber WiFi</li>
+                        <li class="flex items-center gap-2 font-bold text-lg"><span class="material-symbols-outlined text-secondary">check_circle</span> Bi-weekly deep cleaning</li>
+                    </ul>
+                    <button class="w-full py-4 primary-gradient text-on-primary rounded-none font-bold ambient-shadow mt-auto">Book 3 Months</button>
+                </div>
+                <div class="bg-surface p-8 rounded-none ghost-border flex flex-col items-center">
+                    <span class="text-sm font-label uppercase tracking-widest mb-4">6 Months</span>
+                    <div class="text-4xl font-headline font-extrabold mb-2">€950</div>
+                    <span class="text-on-surface-variant mb-8 text-sm">Total per month</span>
+                    <ul class="w-full space-y-3 mb-8 text-sm opacity-80 flex-grow">
+                        <li class="flex items-center gap-2 font-bold"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> Lowest seasonal rate</li>
+                        <li class="flex items-center gap-2 font-bold"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> Full winter residency</li>
+                        <li class="flex items-center gap-2 font-bold"><span class="material-symbols-outlined text-xs text-secondary">check_circle</span> Local gym membership</li>
+                    </ul>
+                    <button class="w-full py-3 border border-outline text-on-surface rounded-none font-bold hover:bg-on-surface hover:text-white transition-all mt-auto">Select</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="max-w-5xl mx-auto px-8 py-48 text-center" id="contact">
+        <h2 class="font-headline text-5xl md:text-7xl font-extrabold mb-8 tracking-tighter">Ready to swap the grey for blue?</h2>
+        <p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto italic">Contact us directly for personalized long-stay quotes or any specific requirements for your stay.</p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a class="flex items-center gap-3 bg-secondary text-on-secondary px-8 py-4 rounded-none hover:translate-y-[-2px] transition-transform" href="https://wa.me/35799317615">
+                <span class="material-symbols-outlined">chat</span>
+                <span class="font-bold uppercase tracking-widest text-sm">WhatsApp Us</span>
+            </a>
+            <a class="flex items-center gap-3 bg-surface-container-highest text-on-surface px-8 py-4 rounded-none hover:translate-y-[-2px] transition-transform ghost-border" href="mailto:hello@villathalassa.com">
+                <span class="material-symbols-outlined">mail</span>
+                <span class="font-bold uppercase tracking-widest text-sm">Email Inquiry</span>
+            </a>
+            <a class="flex items-center gap-3 border-2 border-primary text-primary px-8 py-4 rounded-none hover:translate-y-[-2px] transition-transform font-bold uppercase tracking-widest text-sm" href="#">
+                View on Airbnb
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-nav-bg text-white py-24 px-8 border-t border-white/5">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-20 max-w-7xl mx-auto">
+        <div class="space-y-6">
+            <div class="text-2xl font-headline font-bold text-white tracking-tighter">Villa Thalassa Paralimni</div>
+            <p class="text-white/60 font-body text-base leading-relaxed italic max-w-sm">A boutique residential retreat designed for those who appreciate the finer details of coastal living.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8">
+            <div class="space-y-4">
+                <h5 class="text-primary-fixed-dim font-bold uppercase tracking-widest text-xs">Navigation</h5>
+                <ul class="space-y-2 text-sm text-white/50">
+                    <li><a href="#lifestyle" class="hover:text-white">Neighborhood</a></li>
+                    <li><a href="#villa" class="hover:text-white">The Villa</a></li>
+                    <li><a href="#pricing" class="hover:text-white">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-primary-fixed-dim font-bold uppercase tracking-widest text-xs">Connect</h5>
+                <ul class="space-y-2 text-sm text-white/50">
+                    <li><a href="#" class="hover:text-white">Instagram</a></li>
+                    <li><a href="#" class="hover:text-white">Facebook</a></li>
+                    <li><a href="#" class="hover:text-white">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col items-start md:items-end justify-between">
+            <button class="px-10 py-4 bg-primary text-white font-bold uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-transform">Book Residency</button>
+            <div class="mt-8 text-xs text-white/30 tracking-widest font-bold">© 2024 VILLA THALASSA PARALIMNI</div>
+        </div>
+    </div>
 </footer>
 
 <!-- Neighborhood Modal -->
 <div id="neighborhood-modal" class="fixed inset-0 z-[100] hidden">
     <div class="absolute inset-0 bg-on-surface/40 backdrop-blur-md transition-opacity duration-300" onclick="closeNeighborhoodModal()"></div>
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl px-4">
-        <div class="bg-surface-container-lowest border-[3px] border-primary-fixed-dim luxury-pop p-8 md:p-12 relative overflow-hidden animate-in fade-in zoom-in duration-300">
-            <button onclick="closeNeighborhoodModal()" class="absolute top-6 right-6 h-12 w-12 flex items-center justify-center rounded-full bg-surface-container-low border border-outline/10 text-on-surface hover:bg-primary hover:text-white transition-all luxury-pop z-[110]" aria-label="Close modal">
+        <div class="bg-surface-container-lowest border-[3px] border-primary-fixed-dim shadow-2xl p-8 md:p-12 relative overflow-hidden animate-in fade-in zoom-in duration-300">
+            <button onclick="closeNeighborhoodModal()" class="absolute top-6 right-6 h-12 w-12 flex items-center justify-center rounded-full bg-surface-container-low border border-outline/10 text-on-surface hover:bg-primary hover:text-white transition-all z-[110]" aria-label="Close modal">
                 <span class="material-symbols-outlined text-2xl font-bold">close</span>
             </button>
-            
-            <div id="modal-content" class="space-y-8">
-                <!-- Content will be injected here -->
-            </div>
+            <div id="modal-content" class="space-y-8"></div>
         </div>
     </div>
 </div>
@@ -474,9 +479,9 @@
             image: "villaphotos/final/malama_cove_highres.png",
             description: "Winter along our coast is a best-kept secret. The sea remains swimmable until mid-December, and the coves are yours alone.",
             highlights: [
-                { name: "Malama Beach (350m)", detail: "A sheltered boutique cove with limestone paths. Crystal clear and wind-free.", image: "villaphotos/final/malama_cove_highres.png", longDescription: "Malama is our 'backyard' beach. In winter, the turquoise water remains incredibly clear and calm, protected from the north winds. It’s perfect for a refreshing morning swim or a quiet sunset meditation without the summer crowds." },
-                { name: "Scoutari Cove (1km)", detail: "A wild, untouched beach perfect for quiet contemplation.", image: "villaphotos/final/scoutari_cove_highres.png", longDescription: "Just a bit further along the coastal path, Scoutari offers a more rugged experience. The white limestone cliffs contrast beautifully with the deep blue Mediterranean, making it a favorite spot for long-term residents seeking pure tranquility." },
-                { name: "Sirena Bay", detail: "The area's most beautiful boutique bay, just a short walk along the coast.", image: "villaphotos/final/sirena_bay_highres.png", longDescription: "Sirena Bay retains its mystical charm year-round. While the beach bar may be quieter in winter, the beauty of the emerald-green water and the overhanging trees makes it one of the most picturesque locations on the island." }
+                { name: "Malama Beach (350m)", detail: "A sheltered boutique cove with limestone paths. Crystal clear and wind-free.", image: "villaphotos/final/malama_cove_highres.png", longDescription: "Malama is our 'backyard' beach. In winter, the turquoise water remains incredibly clear and calm, protected from the north winds. It’s perfect for a refreshing morning swim or a quiet sunset meditation." },
+                { name: "Scoutari Cove (1km)", detail: "A wild, untouched beach perfect for quiet contemplation.", image: "villaphotos/final/scoutari_cove_highres.png", longDescription: "Scoutari offers a more rugged experience. The white limestone cliffs contrast beautifully with the deep blue Mediterranean, making it a favorite spot for long-term residents seeking pure tranquility." },
+                { name: "Sirena Bay", detail: "The area's most beautiful boutique bay, just a short walk along the coast.", image: "villaphotos/final/sirena_bay_highres.png", longDescription: "Sirena Bay retains its mystical charm year-round. The beauty of the emerald-green water and the overhanging trees makes it one of the most picturesque locations on the island." }
             ]
         },
         soul: {
@@ -486,9 +491,8 @@
             image: "villaphotos/final/ttappis_tavern_highres.png",
             description: "Kapparis and Paralimni are alive year-round. These are the places that the locals protect.",
             highlights: [
-                { name: "Ttappis Tavern", detail: "Paralimni's pride. Award-winning traditional meze that feels like a family feast.", image: "villaphotos/final/ttappis_tavern_highres.png", longDescription: "Ttappis is legendary. For guests staying through the winter, it becomes their second home. The seasonal meze changes slightly based on the freshest local ingredients, but the warmth of the hospitality remains constant." },
-                { name: "Zorbas Bakery", detail: "Artisan bread and divine pastries. Open 24/7 and just a short walk away.", image: "villaphotos/final/zorbas_bakery_highres.png", longDescription: "Zorbas is more than a bakery; it's a pillar of local life. From fresh halloumi-filled breads to premium coffee and healthy salads, it’s the perfect spot for your daily essentials, all within a short stroll from Villa Thalassa." },
-                { name: "Vangelis Tavern", detail: "A long-standing institution serving the best local fish and grilled meats.", image: "villaphotos/final/ttappis_tavern_highres.png", longDescription: "Vangelis offers a slightly more modern take on Cypriot cuisine while respecting tradition. It’s a favorite for its consistently high quality and welcoming atmosphere during the quieter winter months." }
+                { name: "Ttappis Tavern", detail: "Paralimni's pride. Award-winning traditional meze.", image: "villaphotos/final/ttappis_tavern_highres.png", longDescription: "Ttappis is legendary. For guests staying through the winter, it becomes their second home. The seasonal meze changes slightly based on the freshest local ingredients." },
+                { name: "Zorbas Bakery", detail: "Artisan bread and divine pastries. Open 24/7.", image: "villaphotos/final/zorbas_bakery_highres.png", longDescription: "Zorbas is more than a bakery; it's a pillar of local life. From fresh halloumi-filled breads to premium coffee, it’s the perfect spot for your daily essentials." }
             ]
         },
         sun: {
@@ -496,11 +500,10 @@
             subtitle: "340+ Days of Sun per Year",
             icon: "wb_sunny",
             image: "villaphotos/final/coastal_path_highres.png",
-            description: "In January, while the rest of Europe is under grey skies, our garden is bathed in amber light. It's the perfect environment for deep work and rejuvenation.",
+            description: "In January, while the rest of Europe is under grey skies, our garden is bathed in amber light.",
             highlights: [
-                { name: "Perfect Temperature", detail: "Daytime averages of 18-21°C in Dec/Jan. T-shirt weather is standard.", image: "villaphotos/final/beach_hero_highres.png", longDescription: "The mild Cypriot winter is perfect for those escaping the harsh northern cold. Expect crystal blue skies and a sun that still carries a gentle warmth, making the garden and terrace usable throughout the entire season." },
-                { name: "Garden Workspace", detail: "Our high-speed fiber extends to the garden, so you can work under the sun.", image: "villaphotos/final/remote_work_desk.png", longDescription: "We've specialized our WiFi setup with outdoor access points, ensuring that the 200 Mbps fiber connection remains stable whether you are in the living area or the outdoor lounge. Work from a sun-lounger or the pool-side bar with total reliability." },
-                { name: "Golden Hour", detail: "The winter sunset over the limestone cliffs is a daily ritual you won't want to miss.", image: "villaphotos/final/coastal_path_highres.png", longDescription: "The 350m stroll to the coast reveals a stunning limestone landscape that catches the low winter sun. The 'Golden Hour' in Paralimni lasts longer in winter, providing a spectacular, tranquil backdrop for your evening walk." }
+                { name: "Perfect Temperature", detail: "Daytime averages of 18-21°C in Dec/Jan.", image: "villaphotos/final/beach_hero_highres.png", longDescription: "Expect crystal blue skies and a sun that still carries a gentle warmth, making the garden and terrace usable throughout the entire season." },
+                { name: "Garden Workspace", detail: "High-speed fiber extends to the garden.", image: "villaphotos/final/remote_work_desk.png", longDescription: "We've specialized our WiFi setup with outdoor access points, ensuring that the 200 Mbps fiber connection remains stable poolside." }
             ]
         },
         local: {
@@ -508,11 +511,9 @@
             subtitle: "Beyond the Hotel Strips",
             icon: "cottage",
             image: "villaphotos/final/local_street_highres.png",
-            description: "Villa Thalassa is located in a quiet, residential neighborhood. There are no high-rise hotels or loud bars—just the peace of a coastal village.",
+            description: "Villa Thalassa is located in a quiet, residential neighborhood. No high-rise hotels—just peace.",
             highlights: [
-                { name: "Local Pharmacy & Shops", detail: "Walkable access to year-round essentials like groceries and health services.", image: "villaphotos/final/zorbas_bakery_highres.png", longDescription: "Unlike the seasonal tourist strips, our local village center in Kapparis remains fully operational throughout the winter. You'll find gourmet bakeries, pharmacies, and high-quality supermarkets all within a 5-10 minute walk." },
-                { name: "Safe & Quiet Streets", detail: "Perfect for family walks or morning runs along the coastal path.", image: "villaphotos/final/local_street_highres.png", longDescription: "The neighborhood is predominantly residential, meaning very little traffic and a high sense of security. It's an ideal environment for long-term stays, where you'll quickly become part of the quietMediterranean rhythm." },
-                { name: "Coastal Connection", detail: "Direct access to the 5km coastal path connecting all the local coves.", image: "villaphotos/final/coastal_path_highres.png", longDescription: "Just at the end of our street, the coastal pathway begins. This scenic trail winds along the cliffs for kilometers, offering several different routes for morning runs or slow afternoon meditations by the sea." }
+                { name: "Safe & Quiet Streets", detail: "Perfect for family walks or morning runs.", image: "villaphotos/final/local_street_highres.png", longDescription: "The neighborhood is predominantly residential, meaning very little traffic and a high sense of security. It's an ideal environment for long-term stays." }
             ]
         }
     };
@@ -521,13 +522,11 @@
         const data = neighborhoodData[topic];
         const modal = document.getElementById('neighborhood-modal');
         const content = document.getElementById('modal-content');
-        
         content.innerHTML = `
             <div class="relative -mx-8 md:-mx-12 -mt-8 md:-mt-12 mb-10 h-72">
                 <img src="${data.image}" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
             </div>
-
             <div class="flex items-center gap-6 mb-8 relative z-10">
                 <div class="h-16 w-16 bg-primary-fixed-dim rounded-full flex items-center justify-center text-primary border-[3px] border-primary-fixed-dim luxury-pop">
                     <span class="material-symbols-outlined text-4xl font-bold">${data.icon}</span>
@@ -537,29 +536,18 @@
                     <p class="font-label uppercase tracking-widest text-xs text-primary font-bold mt-1 tracking-[0.2em]">${data.subtitle}</p>
                 </div>
             </div>
-            
-            <p class="text-lg text-on-surface-variant leading-relaxed mb-10 border-l-4 border-primary-fixed-dim pl-6 italic">
-                "${data.description}"
-            </p>
-            
+            <p class="text-lg text-on-surface-variant leading-relaxed mb-10 border-l-4 border-primary-fixed-dim pl-6 italic">"${data.description}"</p>
             <div class="grid gap-6">
                 ${data.highlights.map((h, index) => `
                     <div onclick="openAttractionDetail('${topic}', ${index})" class="bg-surface rounded-none border-[2px] border-primary-fixed-dim shadow-sm flex flex-col md:flex-row overflow-hidden group cursor-pointer hover:border-primary transition-all">
-                        <div class="md:w-1/3 h-48 md:h-auto overflow-hidden">
-                            <img src="${h.image}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        </div>
+                        <div class="md:w-1/3 h-48 md:h-auto overflow-hidden"><img src="${h.image}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"></div>
                         <div class="p-6 flex-1 flex flex-col justify-center">
-                            <div class="flex justify-between items-start mb-2">
-                                <h4 class="font-bold text-lg font-headline">${h.name}</h4>
-                                <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-all translate-x-[-10px] group-hover:translate-x-0">arrow_forward</span>
-                            </div>
+                            <div class="flex justify-between items-start mb-2"><h4 class="font-bold text-lg font-headline">${h.name}</h4><span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-all translate-x-[-10px] group-hover:translate-x-0">arrow_forward</span></div>
                             <p class="text-sm opacity-80 leading-relaxed">${h.detail}</p>
                         </div>
                     </div>
                 `).join('')}
-            </div>
-        `;
-        
+            </div>`;
         modal.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
     }
@@ -567,34 +555,15 @@
     function openAttractionDetail(topic, index) {
         const data = neighborhoodData[topic].highlights[index];
         const modalContent = document.getElementById('modal-content');
-        
         modalContent.innerHTML = `
-            <button onclick="openNeighborhoodModal('${topic}')" class="flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-xs hover:gap-4 transition-all mb-8 group">
-                <span class="material-symbols-outlined text-sm">arrow_back</span>
-                Back to Neighborhood
-            </button>
-
-            <div class="relative -mx-8 md:-mx-12 mb-10 h-[400px] border-y-[3px] border-primary-fixed-dim luxury-pop">
-                <img src="${data.image}" class="w-full h-full object-cover">
-            </div>
-
+            <button onclick="openNeighborhoodModal('${topic}')" class="flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-xs hover:gap-4 transition-all mb-8 group"><span class="material-symbols-outlined text-sm">arrow_back</span>Back to Neighborhood</button>
+            <div class="relative -mx-8 md:-mx-12 mb-10 h-[400px] border-y-[3px] border-primary-fixed-dim luxury-pop"><img src="${data.image}" class="w-full h-full object-cover"></div>
             <div>
                 <h2 class="font-headline text-4xl font-bold mb-4">${data.name}</h2>
                 <div class="h-1 w-20 bg-primary mb-8"></div>
-                <p class="text-xl text-on-surface-variant leading-relaxed">
-                    ${data.longDescription}
-                </p>
-                <p class="mt-8 text-on-surface-variant opacity-80 leading-relaxed italic">
-                    This location is a key part of the Paralimni winter experience. Its authentic character and proximity to Villa Thalassa make it a must-visit during your long-term stay.
-                </p>
+                <p class="text-xl text-on-surface-variant leading-relaxed">${data.longDescription}</p>
             </div>
-            
-            <div class="pt-12 flex justify-center">
-                <button onclick="openNeighborhoodModal('${topic}')" class="bg-surface border-2 border-primary text-primary px-8 py-4 font-bold uppercase tracking-widest text-sm hover:bg-primary hover:text-white transition-all">
-                    Back to Selection
-                </button>
-            </div>
-        `;
+            <div class="pt-12 flex justify-center"><button onclick="openNeighborhoodModal('${topic}')" class="bg-surface border-2 border-primary text-primary px-8 py-4 font-bold uppercase tracking-widest text-sm hover:bg-primary hover:text-white transition-all">Back to Selection</button></div>`;
     }
 
     function closeNeighborhoodModal() {
@@ -603,7 +572,6 @@
         document.body.style.overflow = 'auto';
     }
 
-    // Navbar scroll effect
     const nav = document.getElementById('main-nav');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -615,80 +583,32 @@
         }
     });
 
-    // Close on escape
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeNeighborhoodModal();
-    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeNeighborhoodModal(); });
 </script>
-<!-- Floating WhatsApp Button -->
+
 <a id="whatsapp-float" href="https://wa.me/35799317615?text=Hi!%20I'm%20interested%20in%20Villa%20Thalassa%20Paralimni." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <div class="whatsapp-tooltip">WhatsApp Us</div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     <div class="whatsapp-ripple"></div>
 </a>
 <style>
-    #whatsapp-float {
-        position: fixed;
-        bottom: 32px;
-        right: 32px;
-        z-index: 9999;
-        width: 60px;
-        height: 60px;
-        background: #25D366;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
-        text-decoration: none;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    #whatsapp-float:hover {
-        transform: scale(1.1);
-        box-shadow: 0 12px 32px rgba(37, 211, 102, 0.65);
-    }
-    #whatsapp-float:hover .whatsapp-tooltip {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    .whatsapp-tooltip {
-        position: absolute;
-        right: 70px;
-        background: #1b1c19;
-        color: white;
-        font-family: Manrope, sans-serif;
-        font-size: 13px;
-        font-weight: 600;
-        padding: 8px 14px;
-        border-radius: 6px;
-        white-space: nowrap;
-        opacity: 0;
-        transform: translateX(8px);
-        transition: all 0.2s ease;
-        pointer-events: none;
-    }
-    .whatsapp-tooltip::after {
-        content: '';
-        position: absolute;
-        right: -6px;
-        top: 50%;
-        transform: translateY(-50%);
-        border: 6px solid transparent;
-        border-right: none;
-        border-left-color: #1b1c19;
-    }
-    .whatsapp-ripple {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background: rgba(37, 211, 102, 0.4);
-        animation: whatsapp-pulse 2s infinite;
-        pointer-events: none;
-    }
-    @keyframes whatsapp-pulse {
-        0%   { transform: scale(1);   opacity: 0.7; }
-        100% { transform: scale(1.7); opacity: 0;   }
-    }
+    #whatsapp-float { position: fixed; bottom: 32px; right: 32px; z-index: 9999; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45); text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    #whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 12px 32px rgba(37, 211, 102, 0.65); }
+    #whatsapp-float:hover .whatsapp-tooltip { opacity: 1; transform: translateX(0); }
+    .whatsapp-tooltip { position: absolute; right: 70px; background: #1b1c19; color: white; font-family: Manrope, sans-serif; font-size: 13px; font-weight: 600; padding: 8px 14px; border-radius: 6px; white-space: nowrap; opacity: 0; transform: translateX(8px); transition: all 0.2s ease; pointer-events: none; }
+    .whatsapp-tooltip::after { content: ''; position: absolute; right: -6px; top: 50%; transform: translateY(-50%); border: 6px solid transparent; border-right: none; border-left-color: #1b1c19; }
+    .whatsapp-ripple { position: absolute; width: 100%; height: 100%; border-radius: 50%; background: rgba(37, 211, 102, 0.4); animation: whatsapp-pulse 2s infinite; pointer-events: none; }
+    @keyframes whatsapp-pulse { 0% { transform: scale(1); opacity: 0.7; } 100% { transform: scale(1.7); opacity: 0; } }
 </style>
-</body></html>
+
+<!-- Sticky Mobile Footer Bar -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 z-[60] bg-white/80 backdrop-blur-lg border-t border-outline-variant/30 p-4 flex items-center justify-between shadow-xl">
+    <div class="flex flex-col">
+        <span class="text-[10px] uppercase tracking-widest text-primary font-bold">Rates FROM</span>
+        <span class="text-lg font-headline font-bold text-on-surface">€950<span class="text-xs font-body font-normal opacity-60">/mo</span></span>
+    </div>
+    <a href="#contact" class="bg-primary text-on-primary px-6 py-3 rounded-none font-bold text-sm hover:bg-on-surface transition-all">Book Now</a>
+</div>
+
+</body>
+</html>
