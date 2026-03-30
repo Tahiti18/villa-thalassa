@@ -1,0 +1,3 @@
+# One YouTube playlist URL per line
+# Example:
+#   https://www.youtube.com/playlist?list=PLxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

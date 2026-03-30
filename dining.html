@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Explore Dining Area at Villa Thalassa, our boutique villa in Paralimni. Gather around the table."/>
+    <title>Villa Thalassa | Dining Area</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-background": "#1b1c19", "inverse-surface": "#30312e", "surface-container-lowest": "#fdfbf7",
+                        "on-tertiary-container": "#3e585c", "tertiary-fixed": "#cbe8ec", "secondary-fixed-dim": "#9ecdea",
+                        "surface": "#f4efe6", "on-surface": "#2d2a26", "outline": "#8c8273", "surface-container-low": "#ede6db",
+                        "secondary-fixed": "#c4e7ff", "surface-tint": "#7a6b52", "on-error": "#ffffff", "on-primary": "#ffffff",
+                        "inverse-primary": "#d5c5a8", "surface-container-highest": "#dbd0c1", "on-secondary-fixed": "#001e2c",
+                        "surface-container-high": "#e6dcce", "secondary-container": "#b1e0fe", "on-tertiary-fixed": "#031f23",
+                        "background": "#f4efe6", "tertiary": "#486367", "on-surface-variant": "#4c463c",
+                        "primary-fixed": "#f2e0c3", "surface-variant": "#e4e2dd", "primary": "#7a6b52",
+                        "surface-container": "#e6dcce", "on-primary-container": "#4a402d", "nav-bg": "#232320",
+                        "secondary": "#2b566e"
+                    },
+                    fontFamily: { "headline": ["Playfair Display", "serif"], "body": ["Manrope"], "label": ["Manrope"] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .bg-glass { background: rgba(251, 249, 244, 0.7); backdrop-filter: blur(12px); }
+        .ambient-shadow { box-shadow: 0px 20px 40px rgba(27, 28, 25, 0.06); }
+        .primary-gradient { background: linear-gradient(45deg, #695d46 0%, #d7c7ab 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container pb-24">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-nav-bg shadow-lg border-b border-white/5">
+    <div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
+        <a href="villa_thalassa_local_lifestyle.html" class="flex items-center gap-2 text-white hover:text-primary-container transition-colors">
+            <span class="material-symbols-outlined">arrow_back</span>
+            <span class="text-xl font-bold tracking-tighter font-headline">Back to Main</span>
+        </a>
+    </div>
+</nav>
+
+<main class="pt-[92px]">
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-8 mt-12 mb-16">
+        <h1 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tighter mb-4">Dining Area</h1>
+        <p class="font-body text-xl opacity-80 max-w-2xl">Gather around the table.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-8 mb-24">
+        <div class="swiper mySwiper !py-20 !px-10 -mx-10 -my-20">
+            <div class="swiper-wrapper py-4">
+                <div class="swiper-slide !w-auto flex justify-center items-center bg-transparent"><img src="villaphotos/final/dining_1.jpg" class="h-[280px] md:h-[480px] w-auto max-w-[85vw] rounded-none border-[3px] border-primary-fixed-dim luxury-pop" style="outline: none;" alt="Villa Thalassa dining photo"></div>
+<div class="swiper-slide !w-auto flex justify-center items-center bg-transparent"><img src="villaphotos/final/dining_3.jpg" class="h-[280px] md:h-[480px] w-auto max-w-[85vw] rounded-none border-[3px] border-primary-fixed-dim luxury-pop" style="outline: none;" alt="Villa Thalassa dining photo"></div>
+<div class="swiper-slide !w-auto flex justify-center items-center bg-transparent"><img src="villaphotos/final/dining_4.jpg" class="h-[280px] md:h-[480px] w-auto max-w-[85vw] rounded-none border-[3px] border-primary-fixed-dim luxury-pop" style="outline: none;" alt="Villa Thalassa dining photo"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-8 bg-surface-container-lowest p-12 rounded-none ambient-shadow ghost-border">
+        <h2 class="font-headline text-2xl font-bold mb-8">Included Amenities</h2>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+            <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span>Large Dining Table</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span>Seating for 8</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span>Natural Light</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span>Open Plan Access to Kitchen</li>
+
+        </ul>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            centeredSlides: true,
+            rewind: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            }
+        });
+    });
+</script>
+</body>
+</html>

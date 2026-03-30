@@ -1,0 +1,20 @@
+# Raw downloaded photos (large originals not needed for the site)
+villaphotos/drive-download*/
+villaphotos/extracted/
+villaphotos/unique/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+*.egg-link
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/

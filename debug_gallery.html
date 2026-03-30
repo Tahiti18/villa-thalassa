@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Gallery</title>
+    <style>
+        body { font-family: sans-serif; background: #f4efe6; margin: 0; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        img { width: 100%; height: 300px; object-fit: contain; border-radius: 4px; background: #eee; }
+        .filename { margin-top: 10px; font-weight: bold; font-family: monospace; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Photo Audit - Find the Misplaced Kitchen Photo</h1>
+    <p>Please look at the photos below and let me know the <strong>exact filename</strong> of the misplaced kitchen photo (for example, if a dining photo is actually the kitchen).</p>
+    <div class="grid">
+        <!-- Living Room -->
+        <div class="card"><img src="villaphotos/final/living_room_1.jpg"><div class="filename">living_room_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/living_room_2.jpg"><div class="filename">living_room_2.jpg</div></div>
+        <!-- Kitchen -->
+        <div class="card"><img src="villaphotos/final/kitchen_1.jpg"><div class="filename">kitchen_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/kitchen_2.jpg"><div class="filename">kitchen_2.jpg</div></div>
+        <!-- Dining -->
+        <div class="card"><img src="villaphotos/final/dining_1.jpg"><div class="filename">dining_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/dining_2.jpg"><div class="filename">dining_2.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/dining_3.jpg"><div class="filename">dining_3.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/dining_4.jpg"><div class="filename">dining_4.jpg</div></div>
+        <!-- Bedrooms -->
+        <div class="card"><img src="villaphotos/final/bedroom_1_1.jpg"><div class="filename">bedroom_1_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/bedroom_1_2.jpg"><div class="filename">bedroom_1_2.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/bedroom_2_1.jpg"><div class="filename">bedroom_2_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/bedroom_3_1.jpg"><div class="filename">bedroom_3_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/bedroom_4_1.jpg"><div class="filename">bedroom_4_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/bedroom_4_2.jpg"><div class="filename">bedroom_4_2.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/bedroom_generic_1.jpg"><div class="filename">bedroom_generic_1.jpg</div></div>
+        <!-- Bathrooms -->
+        <div class="card"><img src="villaphotos/final/bathroom_1.jpg"><div class="filename">bathroom_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/bathroom_2.jpg"><div class="filename">bathroom_2.jpg</div></div>
+        <!-- Patio / Outdoors -->
+        <div class="card"><img src="villaphotos/final/patio_table.jpg"><div class="filename">patio_table.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/patio_bbq.jpg"><div class="filename">patio_bbq.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/patio_bar_1.jpg"><div class="filename">patio_bar_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/patio_bar_2.jpg"><div class="filename">patio_bar_2.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/patio_pergola_1.jpg"><div class="filename">patio_pergola_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/patio_pergola_2.jpg"><div class="filename">patio_pergola_2.jpg</div></div>
+        <!-- Driveway & Exterior -->
+        <div class="card"><img src="villaphotos/final/patio_driveway.jpg"><div class="filename">patio_driveway.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/exterior_house_1.jpg"><div class="filename">exterior_house_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/exterior_street.jpg"><div class="filename">exterior_street.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/exterior_view_1.jpg"><div class="filename">exterior_view_1.jpg</div></div>
+        <div class="card"><img src="villaphotos/final/exterior_view_2.jpg"><div class="filename">exterior_view_2.jpg</div></div>
+    </div>
+</body>
+</html>

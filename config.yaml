@@ -1,0 +1,37 @@
+# yt-bulk-transcripts configuration
+# ──────────────────────────────────
+
+# YouTube Data API v3 key (optional — enables channel/playlist discovery)
+# If omitted, only inputs/video_urls.txt is used.
+youtube_api_key: null
+
+# Language preferences (supports regex, e.g. "en.*" matches "en", "en-US")
+languages:
+  - "en"
+
+# Caption selection strategy
+prefer_human_captions: true
+include_auto_captions: true
+
+# Preferred subtitle format: "vtt" (primary), falls back to best available
+subtitle_format: "vtt"
+
+# Discovery limits
+max_videos_per_channel: 500
+
+# Concurrency and rate limiting
+concurrency: 3
+min_concurrency: 1           # floor when dynamic reduction kicks in
+sleep_between_requests_ms: 250
+
+# User-Agent header for yt-dlp
+user_agent: "yt-bulk-transcripts/0.1.0"
+
+# Output settings
+output_dir: "out"
+save_text_files: true         # out/transcripts/{video_id}.txt
+save_json_files: true         # out/transcripts/{video_id}.json
+save_raw_subtitles: true      # out/transcripts/{video_id}.vtt
+
+# Public captions only (enforced, cannot be disabled)
+public_captions_only: true
