@@ -358,6 +358,98 @@
         </div>
     </section>
 
+    <!-- Meet the Host & Local Concierge Section -->
+    <section class="py-32 bg-white overflow-hidden" id="host">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-20 items-center mb-32">
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 w-64 h-64 bg-primary-container rounded-full opacity-20 blur-3xl"></div>
+                    <div class="relative z-10 border-[3px] border-primary-fixed-dim luxury-pop overflow-hidden aspect-[4/5]">
+                        <img src="host_profile.png" alt="Marinos - Your Host at Villa Thalassa" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-nav-bg text-white p-8 luxury-pop hidden md:block">
+                        <span class="font-headline text-3xl font-bold italic">"Welcome home."</span>
+                        <p class="text-xs uppercase tracking-[0.3em] font-bold mt-2 opacity-60">Marinos, Villa Owner</p>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <span class="font-label uppercase tracking-widest text-xs text-primary mb-2 block tracking-[0.2em]">Crafting Your Experience</span>
+                        <h2 class="font-headline text-5xl font-extrabold tracking-tighter leading-tight">Meet Your Host</h2>
+                    </div>
+                    <p class="text-xl text-on-surface-variant leading-relaxed italic">"I built Villa Thalassa not just as a holiday home, but as a sanctuary for those who appreciate the quiet brilliance of the Mediterranean winter."</p>
+                    <div class="space-y-6 text-on-surface/80 leading-relaxed">
+                        <p>Hi, I'm Marinos. My family has been rooted in the Paralimni area for generations. We believe that true luxury isn't just about high-end finishes—it's about local knowledge, seamless connectivity, and the peace of mind that comes from a perfectly managed stay.</p>
+                        <p>Whether you're looking for the best local bakery that only the 'grandpas' know about, or need advice on the quietest coves for a December swim, I'm here to ensure your residency is effortless.</p>
+                    </div>
+                    <div class="pt-6 flex flex-wrap gap-4">
+                        <div class="flex items-center gap-3 bg-surface-container px-5 py-3 border border-primary-fixed-dim">
+                            <span class="material-symbols-outlined text-primary font-bold">verified_user</span>
+                            <span class="font-bold text-sm uppercase tracking-widest">Verified Superhost</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-surface-container px-5 py-3 border border-primary-fixed-dim">
+                            <span class="material-symbols-outlined text-primary font-bold">local_phone</span>
+                            <span class="font-bold text-sm uppercase tracking-widest">24/7 Concierge Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Local Favorites / Hidden Gems -->
+            <div class="text-center mb-16">
+                <span class="font-label uppercase tracking-widest text-xs text-primary mb-2 block tracking-[0.2em]">The Local's Guide</span>
+                <h2 class="font-headline text-4xl font-bold">Host's Hidden Gems</h2>
+                <p class="text-on-surface-variant italic mt-2">Skip the tourist traps. These are the places we actually go.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Gem 1: Bakery -->
+                <div class="group cursor-pointer" onclick="openNeighborhoodModal('soul')">
+                    <div class="relative h-64 overflow-hidden border-[2px] border-primary-fixed-dim mb-4 luxury-pop">
+                        <img src="bakery_lifestyle.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+                        <div class="absolute bottom-4 left-4 bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest">Daily Ritual</div>
+                    </div>
+                    <h4 class="font-headline text-xl font-bold mb-1">Zorbas Bakery</h4>
+                    <p class="text-sm opacity-70 italic">"The 2 a.m. Halloumi bread is a village rite of passage."</p>
+                </div>
+
+                <!-- Gem 2: Cove -->
+                <div class="group cursor-pointer" onclick="openNeighborhoodModal('shores')">
+                    <div class="relative h-64 overflow-hidden border-[2px] border-primary-fixed-dim mb-4 luxury-pop">
+                        <img src="cove_lifestyle.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+                        <div class="absolute bottom-4 left-4 bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest">Quiet Escape</div>
+                    </div>
+                    <h4 class="font-headline text-xl font-bold mb-1">Malama Cove</h4>
+                    <p class="text-sm opacity-70 italic">"Even in January, the limestone floor warms the water."</p>
+                </div>
+
+                <!-- Gem 3: Taverna -->
+                <div class="group cursor-pointer" onclick="openNeighborhoodModal('soul')">
+                    <div class="relative h-64 overflow-hidden border-[2px] border-primary-fixed-dim mb-4 luxury-pop">
+                        <img src="taverna_lifestyle.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+                        <div class="absolute bottom-4 left-4 bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest">Authentic Meze</div>
+                    </div>
+                    <h4 class="font-headline text-xl font-bold mb-1">Ttappis Tavern</h4>
+                    <p class="text-sm opacity-70 italic">"The best meze on the island. Period. Book ahead."</p>
+                </div>
+
+                <!-- Gem 4: Streets -->
+                <div class="group cursor-pointer" onclick="openNeighborhoodModal('local')">
+                    <div class="relative h-64 overflow-hidden border-[2px] border-primary-fixed-dim mb-4 luxury-pop">
+                        <img src="street_lifestyle.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+                        <div class="absolute bottom-4 left-4 bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest">Neighborhood</div>
+                    </div>
+                    <h4 class="font-headline text-xl font-bold mb-1">Residential Calm</h4>
+                    <p class="text-sm opacity-70 italic">"Safe, quiet, and perfectly positioned for explorers."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Pricing Section -->
     <section class="py-32 bg-surface-container scroll-mt-32" id="pricing">
         <div class="max-w-7xl mx-auto px-8">
