@@ -1,15 +1,30 @@
-# Raw downloaded photos (large originals not needed for the site)
+# Raw downloaded photos & zip (large, not needed for site)
 villaphotos/drive-download*/
+villaphotos/*.zip
 villaphotos/extracted/
 villaphotos/unique/
 
-# Python
+# Unrelated Python project files
+src/
+tests/
+pyproject.toml
+*.egg-info/
+generate_site.py
+organize_final.py
+organize_photos.py
+config.yaml
+output1
+
+# Python cache
 __pycache__/
 *.pyc
 .pytest_cache/
 .ruff_cache/
-*.egg-info/
-*.egg-link
+
+# Misc scratch files
+debug_gallery.html
+Walkthrough
+implementation_plan.md
 
 # OS
 .DS_Store
