@@ -9,15 +9,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        "nav-bg": "#232320", "on-surface": "#2d2a26", "surface": "#f4efe6", 
-                        "primary": "#7a6b52", "secondary": "#2b566e", "primary-container": "#e8d8bd",
-                        "primary-fixed-dim": "#d5c5a8"
+                        "on-background": "#1b1c19", "inverse-surface": "#30312e", 
+                        "surface-container-lowest": "#fdfbf7", "on-tertiary-container": "#3e585c",
+                        "tertiary-fixed": "#cbe8ec", "secondary-fixed-dim": "#9ecdea",
+                        "surface": "#f4efe6", "on-surface": "#2d2a26", "outline": "#8c8273",
+                        "surface-container-low": "#ede6db", "tertiary-fixed-dim": "#afccd0",
+                        "secondary-fixed": "#c4e7ff", "surface-tint": "#7a6b52", "on-error": "#ffffff",
+                        "on-primary": "#ffffff", "inverse-primary": "#d5c5a8", 
+                        "surface-container-highest": "#dbd0c1", "on-secondary-fixed": "#001e2c",
+                        "surface-container-high": "#e6dcce", "secondary-container": "#b1e0fe",
+                        "on-tertiary-fixed": "#031f23", "surface-bright": "#f9f6f0", 
+                        "secondary": "#2b566e", "on-secondary": "#ffffff", 
+                        "on-error-container": "#93000a", "surface-dim": "#d1c7b8", 
+                        "inverse-on-surface": "#f2f1ec", "primary-container": "#e8d8bd", 
+                        "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#314b4f", 
+                        "background": "#f4efe6", "on-primary-fixed-variant": "#504530", 
+                        "tertiary": "#486367", "error": "#ba1a1a", "on-secondary-container": "#35647e", 
+                        "on-surface-variant": "#4c463c", "tertiary-container": "#b2ced2", 
+                        "primary-fixed": "#f2e0c3", "surface-variant": "#e4e2dd", 
+                        "outline-variant": "#cfc5b9", "on-primary-fixed": "#231a08", 
+                        "primary-fixed-dim": "#d5c5a8", "primary": "#7a6b52", 
+                        "surface-container": "#e6dcce", "on-secondary-fixed-variant": "#184c64", 
+                        "on-primary-container": "#4a402d", "on-tertiary": "#ffffff", "nav-bg": "#232320"
                     },
                     fontFamily: { "headline": ["Playfair Display", "serif"], "body": ["Manrope"] }
                 }
@@ -30,150 +50,122 @@
         .ambient-shadow { box-shadow: 0px 20px 40px rgba(27, 28, 25, 0.06); }
         .luxury-pop { box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.45); }
         .ghost-border { border: 1px solid rgba(207, 197, 185, 0.15); }
+        .primary-gradient { background: linear-gradient(135deg, #7a6b52 0%, #504530 100%); }
     </style>
 </head>
-<body class="bg-surface text-on-surface font-body selection:bg-primary-container pb-24">
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container">
 
-<nav id="main-nav" class="fixed top-0 w-full z-50 bg-transparent transition-all duration-500 border-b border-white/0">
+<nav id="main-nav" class="fixed top-0 w-full z-50 bg-nav-bg transition-all duration-500 border-b border-white/5">
     <div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
         <a href="index.html" class="flex items-center gap-2 text-white hover:text-primary-container transition-colors group">
             <span class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
-            <span class="text-xl font-bold tracking-tighter font-headline">Back to Collection</span>
+            <span class="text-xl font-bold tracking-tighter font-headline">Back to House</span>
         </a>
-        <div class="text-xl font-bold tracking-tighter text-white font-headline hidden md:block opacity-60">Villa Thalassa</div>
+        <div class="text-xl font-bold tracking-tighter text-white font-headline hidden md:block opacity-60">Villa Thalassa Paralimni</div>
     </div>
 </nav>
 
-<main class="relative">
-    <!-- Full Bleed Hero Section -->
-    <section class="relative h-[80vh] flex items-center overflow-hidden w-full mb-32">
-        <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover" src="villaphotos/final/living_room_1.jpg" alt="Living Area Background">
-            <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/20 to-transparent"></div>
-        </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
-            <div class="max-w-2xl text-white">
-                <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-6">Living Area</h1>
-                <p class="font-body text-xl opacity-90 leading-relaxed max-w-xl italic">A cozy, light-filled space for quiet evenings and Mediterranean afternoons.</p>
-            </div>
-        </div>
+<main class="relative pt-24 pb-48">
+    <!-- Area Header -->
+    <section class="max-w-7xl mx-auto px-8 mb-20 text-center">
+        <div class="inline-block h-1 w-20 bg-primary mb-8 mx-auto"></div>
+        <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-6">Living Area</h1>
+        <p class="font-body text-xl text-on-surface-variant max-w-2xl mx-auto italic leading-relaxed">A cozy, light-filled space for quiet evenings and Mediterranean afternoons.</p>
     </section>
 
     <!-- Gallery Section -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-8 mb-48">
-        <div class="swiper mySwiper !py-20 !px-10 -mx-10 -my-20 overflow-visible">
-            <div class="swiper-wrapper py-4">
-                <div class="swiper-slide !w-auto flex justify-center items-center"><img src="villaphotos/final/living_room_1.jpg" class="h-[320px] md:h-[580px] w-auto max-w-[90vw] rounded-none border-[3px] border-primary-fixed-dim luxury-pop" alt="Villa Thalassa living-room photo"></div>\n<div class="swiper-slide !w-auto flex justify-center items-center"><img src="villaphotos/final/living_room_2.jpg" class="h-[320px] md:h-[580px] w-auto max-w-[90vw] rounded-none border-[3px] border-primary-fixed-dim luxury-pop" alt="Villa Thalassa living-room photo"></div>\n
+    <section class="max-w-screen-2xl mx-auto px-4 mb-32">
+        <div class="swiper area-swiper !py-10">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide !w-auto flex justify-center items-center"><img src="villaphotos/final/living_room_1.jpg" class="h-[400px] md:h-[650px] w-auto max-w-[95vw] shadow-2xl border-[4px] border-white ring-[3px] ring-primary-fixed-dim" alt="Villa Thalassa living-room photo"></div>\n<div class="swiper-slide !w-auto flex justify-center items-center"><img src="villaphotos/final/living_room_2.jpg" class="h-[400px] md:h-[650px] w-auto max-w-[95vw] shadow-2xl border-[4px] border-white ring-[3px] ring-primary-fixed-dim" alt="Villa Thalassa living-room photo"></div>\n
             </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination !-bottom-2"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next !text-primary !bg-white/80 p-10 h-20 w-10 !-right-0 luxury-pop hidden md:flex"></div>
+            <div class="swiper-button-prev !text-primary !bg-white/80 p-10 h-20 w-10 !-left-0 luxury-pop hidden md:flex"></div>
         </div>
     </section>
 
-    <!-- Amenities Section -->
-    <section class="max-w-4xl mx-auto px-8 py-16 bg-white/50 backdrop-blur-sm border-[3px] border-primary-fixed-dim shadow-2xl">
-        <h2 class="font-headline text-4xl font-bold mb-12 text-center text-primary tracking-tight underline decoration-primary-container underline-offset-8 decoration-4 uppercase">Included Amenities</h2>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 text-xl">
-            <li class="flex items-center gap-4 font-semibold text-on-surface/90"><span class="material-symbols-outlined text-primary text-2xl font-bold">check_circle</span>Smart TV with streaming apps</li>\n<li class="flex items-center gap-4 font-semibold text-on-surface/90"><span class="material-symbols-outlined text-primary text-2xl font-bold">check_circle</span>Comfortable Linen Seating</li>\n<li class="flex items-center gap-4 font-semibold text-on-surface/90"><span class="material-symbols-outlined text-primary text-2xl font-bold">check_circle</span>Air Conditioning</li>\n<li class="flex items-center gap-4 font-semibold text-on-surface/90"><span class="material-symbols-outlined text-primary text-2xl font-bold">check_circle</span>High-Speed Fiber WiFi</li>\n
+    <!-- Amenities Grid -->
+    <section class="max-w-5xl mx-auto px-8 py-20 bg-surface-container border-[3px] border-primary-fixed-dim luxury-pop">
+        <div class="text-center mb-16">
+            <span class="font-label uppercase tracking-widest text-xs text-primary mb-2 block">Premium Features</span>
+            <h2 class="font-headline text-3xl font-bold">Included Amenities</h2>
+        </div>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+            <li class="flex items-center gap-4 text-lg font-medium text-on-surface/80"><span class="material-symbols-outlined text-secondary font-bold">verified</span>Smart TV with streaming apps</li>\n<li class="flex items-center gap-4 text-lg font-medium text-on-surface/80"><span class="material-symbols-outlined text-secondary font-bold">verified</span>Comfortable Linen Seating</li>\n<li class="flex items-center gap-4 text-lg font-medium text-on-surface/80"><span class="material-symbols-outlined text-secondary font-bold">verified</span>Air Conditioning</li>\n<li class="flex items-center gap-4 text-lg font-medium text-on-surface/80"><span class="material-symbols-outlined text-secondary font-bold">verified</span>Fiber WiFi (212/55 Mbps)</li>\n
         </ul>
     </section>
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const swiper = new Swiper('.mySwiper', {
-            slidesPerView: 'auto',
-            spaceBetween: 60,
-            centeredSlides: true,
-            rewind: true,
-            autoplay: {
-                delay: 4500,
-                disableOnInteraction: false,
-            }
-        });
+<footer class="bg-nav-bg text-white py-24 px-8 border-t border-white/5">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-20 max-w-7xl mx-auto">
+        <div class="space-y-6">
+            <div class="text-2xl font-headline font-bold text-white tracking-tighter">Villa Thalassa Paralimni</div>
+            <p class="text-white/60 font-body text-base leading-relaxed italic max-w-sm">A boutique residential retreat designed for those who appreciate the finer details of coastal living.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8">
+            <div class="space-y-4 text-sm text-white/50">
+                <h5 class="text-primary-fixed-dim font-bold uppercase tracking-widest text-xs">Explore</h5>
+                <ul class="space-y-2">
+                    <li><a href="index.html#lifestyle" class="hover:text-white">Neighborhood</a></li>
+                    <li><a href="index.html#villa" class="hover:text-white">The Villa</a></li>
+                    <li><a href="pricing.html" class="hover:text-white">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4 text-sm text-white/50">
+                <h5 class="text-primary-fixed-dim font-bold uppercase tracking-widest text-xs">Direct Connect</h5>
+                <ul class="space-y-2">
+                    <li><a href="https://wa.me/35799317615" class="hover:text-white">WhatsApp</a></li>
+                    <li><a href="mailto:hello@villathalassa.com" class="hover:text-white">Email Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col items-start md:items-end justify-between">
+            <a href="index.html#contact" class="px-10 py-4 primary-gradient text-white font-bold uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-transform shadow-xl">Inquire Now</a>
+            <div class="mt-8 text-xs text-white/30 tracking-widest font-bold">© 2024 VILLA THALASSA PARALIMNI</div>
+        </div>
+    </div>
+</footer>
 
-        // Navbar scroll effect
-        const nav = document.getElementById('main-nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                nav.classList.remove('bg-transparent', 'border-white/0');
-                nav.classList.add('bg-nav-bg', 'shadow-lg', 'border-white/5');
-            } else {
-                nav.classList.add('bg-transparent', 'border-white/0');
-                nav.classList.remove('bg-nav-bg', 'shadow-lg', 'border-white/5');
-            }
-        });
-    });
-</script>
-<!-- Floating WhatsApp Button -->
 <a id="whatsapp-float" href="https://wa.me/35799317615?text=Hi!%20I'm%20interested%20in%20Villa%20Thalassa%20Paralimni." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <div class="whatsapp-tooltip">WhatsApp Us</div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <div class="whatsapp-ripple"></div>
 </a>
+
+<div class="md:hidden fixed bottom-0 left-0 right-0 z-[60] bg-white/80 backdrop-blur-lg border-t border-outline-variant/30 p-4 flex items-center justify-between shadow-xl">
+    <div class="flex flex-col">
+        <span class="text-[10px] uppercase tracking-widest text-primary font-bold">Rates FROM</span>
+        <span class="text-lg font-headline font-bold text-on-surface">€950<span class="text-xs font-body font-normal opacity-60">/mo</span></span>
+    </div>
+    <a href="index.html#contact" class="bg-primary text-on-primary px-6 py-3 rounded-none font-bold text-sm hover:bg-on-surface transition-all">Book Now</a>
+</div>
+
 <style>
-    #whatsapp-float {
-        position: fixed;
-        bottom: 32px;
-        right: 32px;
-        z-index: 9999;
-        width: 60px;
-        height: 60px;
-        background: #25D366;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
-        text-decoration: none;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    #whatsapp-float:hover {
-        transform: scale(1.1);
-        box-shadow: 0 12px 32px rgba(37, 211, 102, 0.65);
-    }
-    #whatsapp-float:hover .whatsapp-tooltip {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    .whatsapp-tooltip {
-        position: absolute;
-        right: 70px;
-        background: #1b1c19;
-        color: white;
-        font-family: Manrope, sans-serif;
-        font-size: 13px;
-        font-weight: 600;
-        padding: 8px 14px;
-        border-radius: 6px;
-        white-space: nowrap;
-        opacity: 0;
-        transform: translateX(8px);
-        transition: all 0.2s ease;
-        pointer-events: none;
-    }
-    .whatsapp-tooltip::after {
-        content: '';
-        position: absolute;
-        right: -6px;
-        top: 50%;
-        transform: translateY(-50%);
-        border: 6px solid transparent;
-        border-right: none;
-        border-left-color: #1b1c19;
-    }
-    .whatsapp-ripple {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background: rgba(37, 211, 102, 0.4);
-        animation: whatsapp-pulse 2s infinite;
-        pointer-events: none;
-    }
-    @keyframes whatsapp-pulse {
-        0%   { transform: scale(1);   opacity: 0.7; }
-        100% { transform: scale(1.7); opacity: 0;   }
-    }
+    #whatsapp-float { position: fixed; bottom: 32px; right: 32px; z-index: 9999; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45); text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    #whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 12px 32px rgba(37, 211, 102, 0.65); }
+    #whatsapp-float:hover .whatsapp-tooltip { opacity: 1; transform: translateX(0); }
+    .whatsapp-tooltip { position: absolute; right: 70px; background: #1b1c19; color: white; font-family: Manrope, sans-serif; font-size: 13px; font-weight: 600; padding: 8px 14px; border-radius: 6px; white-space: nowrap; opacity: 0; transform: translateX(8px); transition: all 0.2s ease; pointer-events: none; }
+    .whatsapp-tooltip::after { content: ''; position: absolute; right: -6px; top: 50%; transform: translateY(-50%); border: 6px solid transparent; border-right: none; border-left-color: #1b1c19; }
 </style>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const swiper = new Swiper('.area-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            breakpoints: {
+                768: { slidesPerView: 'auto', spaceBetween: 60 }
+            },
+            autoplay: { delay: 5000, disableOnInteraction: false }
+        });
+    });
+</script>
 </body>
 </html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Transparent pricing for your sun-drenched sanctuary at Villa Thalassa, Paralimni. Monthly and seasonal rates for long-term winter stays in Cyprus."/>
+    <title>Villa Thalassa | Pricing & Residencies</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-background": "#1b1c19", "inverse-surface": "#30312e", 
+                        "surface-container-lowest": "#fdfbf7", "on-tertiary-container": "#3e585c",
+                        "tertiary-fixed": "#cbe8ec", "secondary-fixed-dim": "#9ecdea",
+                        "surface": "#f4efe6", "on-surface": "#2d2a26", "outline": "#8c8273",
+                        "surface-container-low": "#ede6db", "tertiary-fixed-dim": "#afccd0",
+                        "secondary-fixed": "#c4e7ff", "surface-tint": "#7a6b52", "on-error": "#ffffff",
+                        "on-primary": "#ffffff", "inverse-primary": "#d5c5a8", 
+                        "surface-container-highest": "#dbd0c1", "on-secondary-fixed": "#001e2c",
+                        "surface-container-high": "#e6dcce", "secondary-container": "#b1e0fe",
+                        "on-tertiary-fixed": "#031f23", "surface-bright": "#f9f6f0", 
+                        "secondary": "#2b566e", "on-secondary": "#ffffff", 
+                        "on-error-container": "#93000a", "surface-dim": "#d1c7b8", 
+                        "inverse-on-surface": "#f2f1ec", "primary-container": "#e8d8bd", 
+                        "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#314b4f", 
+                        "background": "#f4efe6", "on-primary-fixed-variant": "#504530", 
+                        "tertiary": "#486367", "error": "#ba1a1a", "on-secondary-container": "#35647e", 
+                        "on-surface-variant": "#4c463c", "tertiary-container": "#b2ced2", 
+                        "primary-fixed": "#f2e0c3", "surface-variant": "#e4e2dd", 
+                        "outline-variant": "#cfc5b9", "on-primary-fixed": "#231a08", 
+                        "primary-fixed-dim": "#d5c5a8", "primary": "#7a6b52", 
+                        "surface-container": "#e6dcce", "on-secondary-fixed-variant": "#184c64", 
+                        "on-primary-container": "#4a402d", "on-tertiary": "#ffffff", "nav-bg": "#232320"
+                    },
+                    fontFamily: { "headline": ["Playfair Display", "serif"], "body": ["Manrope"] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .bg-glass { background: rgba(251, 249, 244, 0.7); backdrop-filter: blur(12px); }
+        .ambient-shadow { box-shadow: 0px 20px 40px rgba(27, 28, 25, 0.06); }
+        .luxury-pop { box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.45); }
+        .ghost-border { border: 1px solid rgba(207, 197, 185, 0.15); }
+        .primary-gradient { background: linear-gradient(135deg, #7a6b52 0%, #504530 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container">
+
+<nav id="main-nav" class="fixed top-0 w-full z-50 bg-nav-bg transition-all duration-500 border-b border-white/5">
+    <div class="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
+        <a href="index.html" class="flex items-center gap-2 text-white hover:text-primary-container transition-colors group">
+            <span class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+            <span class="text-xl font-bold tracking-tighter font-headline">Back to House</span>
+        </a>
+        <div class="text-xl font-bold tracking-tighter text-white font-headline hidden md:block opacity-60">Villa Thalassa Paralimni</div>
+    </div>
+</nav>
+
+<main class="relative pt-24 pb-48">
+    <!-- Pricing Header -->
+    <section class="max-w-7xl mx-auto px-8 mb-20 text-center">
+        <div class="inline-block h-1 w-20 bg-primary mb-8 mx-auto"></div>
+        <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-6">Pricing & Residencies</h1>
+        <p class="font-body text-xl text-on-surface-variant max-w-2xl mx-auto italic leading-relaxed">
+            Transparent, all-inclusive rates for those looking to swap the winter chill for the Mediterranean sun.
+        </p>
+    </section>
+
+    <!-- Pricing Plans Section -->
+    <section class="max-w-7xl mx-auto px-8">
+        <div class="grid md:grid-cols-3 gap-8 items-stretch">
+            <div class="bg-surface p-10 rounded-none ghost-border border-[3px] border-primary-fixed-dim/30 flex flex-col items-center luxury-pop">
+                <span class="text-sm font-label uppercase tracking-widest mb-6 opacity-60">1 Month Residency</span>
+                <div class="text-5xl font-headline font-extrabold mb-2">€1,300</div>
+                <span class="text-on-surface-variant mb-10 text-sm italic">Full month, all-inclusive</span>
+                <ul class="w-full space-y-4 mb-10 text-base opacity-80 flex-grow">
+                    <li class="flex items-center gap-3 font-bold"><span class="material-symbols-outlined text-sm text-secondary">check_circle</span> All utilities included</li>
+                    <li class="flex items-center gap-3 font-bold"><span class="material-symbols-outlined text-sm text-secondary">check_circle</span> 200Mbps Fiber WiFi</li>
+                    <li class="flex items-center gap-3 font-bold"><span class="material-symbols-outlined text-sm text-secondary">check_circle</span> Weekly professional cleaning</li>
+                    <li class="flex items-center gap-3 font-bold"><span class="material-symbols-outlined text-sm text-secondary">check_circle</span> Welcome package</li>
+                </ul>
+                <a href="index.html#contact" class="w-full py-4 border-2 border-primary text-primary rounded-none font-bold text-center uppercase tracking-widest hover:bg-primary hover:text-white transition-all mt-auto">Inquire</a>
+            </div>
+            
+            <!-- Most Popular -->
+            <div class="bg-white p-10 rounded-none shadow-2xl border-[3px] border-primary flex flex-col items-center relative scale-105 z-10 luxury-pop">
+                <div class="absolute -top-5 bg-primary text-white px-6 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.2em]">Our Signature Plan</div>
+                <span class="text-sm font-label uppercase tracking-widest mb-6 text-primary font-bold">3 Months Residency</span>
+                <div class="text-6xl font-headline font-extrabold mb-2 text-primary">€1,100</div>
+                <span class="text-on-surface-variant mb-10 text-sm italic">Per month, all-inclusive</span>
+                <ul class="w-full space-y-4 mb-10 text-base flex-grow">
+                    <li class="flex items-center gap-4 font-bold text-lg"><span class="material-symbols-outlined text-secondary">verified</span> All utilities included</li>
+                    <li class="flex items-center gap-4 font-bold text-lg"><span class="material-symbols-outlined text-secondary">verified</span> Guaranteed Fiber Speed</li>
+                    <li class="flex items-center gap-4 font-bold text-lg"><span class="material-symbols-outlined text-secondary">verified</span> Bi-weekly deep cleaning</li>
+                    <li class="flex items-center gap-4 font-bold text-lg"><span class="material-symbols-outlined text-secondary">verified</span> Airport transfer included</li>
+                </ul>
+                <a href="index.html#contact" class="w-full py-5 primary-gradient text-white rounded-none font-bold text-center uppercase tracking-widest shadow-xl hover:scale-[1.02] transition-all mt-auto">Book 3 Months</a>
+            </div>
+
+            <div class="bg-surface p-10 rounded-none ghost-border border-[3px] border-primary-fixed-dim/30 flex flex-col items-center luxury-pop">
+                <span class="text-sm font-label uppercase tracking-widest mb-6 opacity-60">6 Months Residency</span>
+                <div class="text-5xl font-headline font-extrabold mb-2">€950</div>
+                <span class="text-on-surface-variant mb-10 text-sm italic">Per month, all-inclusive</span>
+                <ul class="w-full space-y-4 mb-10 text-base opacity-80 flex-grow">
+                    <li class="flex items-center gap-3 font-bold"><span class="material-symbols-outlined text-sm text-secondary">check_circle</span> Lowest seasonal rate</li>
+                    <li class="flex items-center gap-3 font-bold"><span class="material-symbols-outlined text-sm text-secondary">check_circle</span> Full winter protection</li>
+                    <li class="flex items-center gap-3 font-bold"><span class="material-symbols-outlined text-sm text-secondary">check_circle</span> Local gym membership</li>
+                    <li class="flex items-center gap-3 font-bold"><span class="material-symbols-outlined text-sm text-secondary">check_circle</span> Bicycles provided</li>
+                </ul>
+                <a href="index.html#contact" class="w-full py-4 border-2 border-primary text-primary rounded-none font-bold text-center uppercase tracking-widest hover:bg-primary hover:text-white transition-all mt-auto">Inquire</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ / What's Included -->
+    <section class="max-w-4xl mx-auto px-8 mt-32 bg-surface-container p-12 md:p-20 border-[3px] border-primary-fixed-dim luxury-pop">
+        <h2 class="font-headline text-3xl font-bold mb-12 text-center text-on-surface">What's included in the rate?</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-4">
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary">bolt</span>
+                    <div>
+                        <h4 class="font-bold">Utility Bills</h4>
+                        <p class="text-sm opacity-70">Electricity, water, and waste fees are fully covered with no hidden costs.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary">wifi</span>
+                    <div>
+                        <h4 class="font-bold">200Mbps Fiber</h4>
+                        <p class="text-sm opacity-70">A dedicated business-grade connection with enterprise-grade mesh coverage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary">cleaning_services</span>
+                    <div>
+                        <h4 class="font-bold">Cleaning Services</h4>
+                        <p class="text-sm opacity-70">Regular professional cleaning ensuring your sanctuary stays pristine.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary">contact_support</span>
+                    <div>
+                        <h4 class="font-bold">Local Concierge</h4>
+                        <p class="text-sm opacity-70">Direct access to Marinos for local tips, bookings, and technical support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-nav-bg text-white py-24 px-8 border-t border-white/5">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-20 max-w-7xl mx-auto">
+        <div class="space-y-6">
+            <div class="text-2xl font-headline font-bold text-white tracking-tighter">Villa Thalassa Paralimni</div>
+            <p class="text-white/60 font-body text-base leading-relaxed italic max-w-sm">A boutique residential retreat designed for those who appreciate the finer details of coastal living.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 text-sm text-white/50">
+            <div class="space-y-4">
+                <h5 class="text-primary-fixed-dim font-bold uppercase tracking-widest text-xs">Explore</h5>
+                <ul class="space-y-2">
+                    <li><a href="index.html#lifestyle" class="hover:text-white">Neighborhood</a></li>
+                    <li><a href="index.html#villa" class="hover:text-white">The Villa</a></li>
+                    <li><a href="pricing.html" class="hover:text-white text-white font-bold tracking-widest">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="text-primary-fixed-dim font-bold uppercase tracking-widest text-xs">Direct Connect</h5>
+                <ul class="space-y-2">
+                    <li><a href="https://wa.me/35799317615" class="hover:text-white">WhatsApp</a></li>
+                    <li><a href="mailto:hello@villathalassa.com" class="hover:text-white">Email Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col items-start md:items-end justify-between">
+            <a href="index.html#contact" class="px-10 py-4 primary-gradient text-white font-bold uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-transform shadow-xl">Inquire Now</a>
+            <div class="mt-8 text-xs text-white/30 tracking-widest font-bold">© 2024 VILLA THALASSA PARALIMNI</div>
+        </div>
+    </div>
+</footer>
+
+<div class="md:hidden fixed bottom-0 left-0 right-0 z-[60] bg-white/80 backdrop-blur-lg border-t border-outline-variant/30 p-4 flex items-center justify-between shadow-xl">
+    <div class="flex flex-col">
+        <span class="text-[10px] uppercase tracking-widest text-primary font-bold">Rates FROM</span>
+        <span class="text-lg font-headline font-bold text-on-surface">€950<span class="text-xs font-body font-normal opacity-60">/mo</span></span>
+    </div>
+    <a href="index.html#contact" class="bg-primary text-on-primary px-6 py-3 rounded-none font-bold text-sm hover:bg-on-surface transition-all">Book Now</a>
+</div>
+
+</body>
+</html>
